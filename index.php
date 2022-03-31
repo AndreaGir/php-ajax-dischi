@@ -172,56 +172,54 @@ $dischi = [
             </div>
         </div>
         <div class="main">
-        <div class="dentromain">
-        <div class="album">  
+            <div class="dentromain">
+                <div class="album">  
 
-        <div class="carta">
-        <div class="dentrocarta">
-            <figure >
-                <img class="immagine" :src="albums.poster" alt="">
-            </figure>
-
-          <div class="informazioni">
-              <h4> <?php 
-
+                <?php
                 foreach($dischi as $key => $value){
-                    echo $value['title']; 
 
-                };
+                
+                ?>
+                <div class="carta">
+                    <div class="dentrocarta">
+                        <figure >
+                            <img class="immagine" src="<?php
+                                                            echo $value['poster'];
+                                                        ?> 
+                                " alt="">
+                        </figure>
 
-                ?> </h4>
-                <p> <?php 
+                        <div class="informazioni">
+                            <h4>
+                                <?php
+                                    echo $value['title'];
+                                ?> 
+                            </h4>
+                            <p> 
+                                <?php
+                                    echo $value['author'];
+                                ?>     
+                            </p>
+                            <p> 
+                                <?php
+                                    echo $value['year'];
+                                ?>   
+                            </p>
+                        </div>
 
-                    foreach($dischi as $key => $value){
-                            echo $value['author'];
+                    </div>
+                </div>
 
-                    };
+                <?php
+                }
+                ?>
 
-                    ?> </p>
-              <p> <?php 
-
-                    foreach($dischi as $key => $value){
-                             echo $value['year'];
-
-                    };
-
-                ?> </p>
-         </div>
-
-        </div>
-    </div>
-
-        <?php 
-
-            foreach($dischi as $key => $value){
-                echo $value['title'];
-
-            };
-
-        ?>
-        </div>
             
-        </div>
+        
+    
+                </div>
+            
+            </div>
 
     
 
@@ -229,6 +227,14 @@ $dischi = [
 
 
     </div>
+
+    /* foreach(){
+                <?php
+                echo $value['title'];
+                ?>
+
+            };
+ */
     
 </body>
 </html>
