@@ -185,7 +185,7 @@ $dischi = [
               <h4> <?php 
 
                 foreach($dischi as $key => $value){
-                    echo $value['title'];
+                    echo $value['title']; 
 
                 };
 
