@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin-left: 30px;
+   border-radius: 40px;
+   border: 1px solid green;
+}
+.main{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+.dentromain{
+    max-width: 85%;
+    height: 80%;
+    margin: 0 auto;
+}
+.carta > li {
+    width: 18%;
+    height: 50%;
+}
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.informazioni{
+    width: 100%;
+    text-align: center;
+}
+.dentrocarta{
+    margin: 20px;
+    height: 200px;
+}
+.carta  {
+    width: 13%;
+    min-height: 40%;
+    margin: 40px;
+    background-color: rgba(71, 70, 70, 0.589);
+    border-radius: 10px;
+   
+}
+.carta > *{
+    max-width: 100%;
+    
+}
+.immagine{
+    width: 100%;
+    
+}

@@ -1,9 +1,5 @@
 <?php
 
-
-include __DIR__.'/array.php';
-
-/* 
 $dischi = [
     [
       'poster' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
@@ -76,102 +72,11 @@ $dischi = [
       'year' => '1987'
     ]
   ];
- */
+
+
+  header('Content-Type: application/json');
+
 
 
 
 ?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <title>Document</title>
-
-
-</head>
-<body>
-
-
-
-
-
-
-    <div >
-        <div class="header">
-
-            <div class="logo">
-                
-            </div>
-        </div>
-        <div class="main">
-            <div class="dentromain">
-                <div class="album">  
-
-                <?php
-                foreach($dischi as $key => $value){
-
-                
-                ?>
-                <div class="carta">
-                    <div class="dentrocarta">
-                        <figure >
-                            <img class="immagine" src="<?php
-                                                            echo $value['poster'];
-                                                        ?> 
-                                " alt="">
-                        </figure>
-
-                        <div class="informazioni">
-                            <h4>
-                                <?php
-                                    echo $value['title'];
-                                ?> 
-                            </h4>
-                            <p> 
-                                <?php
-                                    echo $value['author'];
-                                ?>     
-                            </p>
-                            <p> 
-                                <?php
-                                    echo $value['year'];
-                                ?>   
-                            </p>
-                            <p> 
-                                Genere:
-                                <?php
-                                    echo $value['genre'];
-                                ?>   
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <?php
-                }
-                ?>
-
-            
-        
-    
-                </div>
-            
-            </div>
-
-    
-
-        </div>
-
-
-    </div>
-
-    
-</body>
-</html>
